@@ -82,13 +82,13 @@ qtk.qmRunAll(inp_prds, '%sprds' % prefix)
 # load computed results
 
 refs = []
-for f in sorted(glob.glob('refs/hf*/*.out')):
+for f in sorted(glob.glob('%srefs/hf*/*.out' % prefix)):
     refs.append(qtk.QMOut(f, program='cpmd'))
 tars = []
-for f in sorted(glob.glob('refs/hcl*/*.out')):
+for f in sorted(glob.glob('%srefs/hcl*/*.out' % prefix)):
     tars.append(qtk.QMOut(f, program='cpmd'))
 prds = []
-for f in sorted(glob.glob('prds/hcl*/*.out')):
+for f in sorted(glob.glob('%sprds/hcl*/*.out' % prefix)):
     prds.append(qtk.QMOut(f, program='cpmd'))
 
 # extract bond length of each system

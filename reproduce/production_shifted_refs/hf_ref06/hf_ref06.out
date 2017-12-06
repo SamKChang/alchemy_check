@@ -1,0 +1,404 @@
+alchemy-he.33257hfi_wait_for_device: The /dev/hfi1_0 device failed to appear after 15.0 seconds: Connection timed out
+ cp_groups: we are using a 1 x 1 grid (groups x nprocs).
+ PROGRAM CPMD STARTED AT: 2017-12-06 16:50:10.039   
+ SETCNST| USING: CODATA 2006 UNITS
+
+
+               ******  ******    ****  ****  ******   
+              *******  *******   **********  *******  
+             ***       **   ***  ** **** **  **   *** 
+             **        **   ***  **  **  **  **    ** 
+             **        *******   **      **  **    ** 
+             ***       ******    **      **  **   *** 
+              *******  **        **      **  *******  
+               ******  **        **      **  ******   
+
+                          VERSION 4.1-rUnversioned directory
+
+                            COPYRIGHT
+                      IBM RESEARCH DIVISION
+                MPI FESTKOERPERFORSCHUNG STUTTGART
+
+                       The CPMD consortium
+                  Home Page: http://www.cpmd.org
+               Mailing List: cpmd-list@cpmd.org
+                     E-mail: cpmd@cpmd.org
+
+
+                  ***  Dec  6 2017 -- 13:10:56  ***
+
+ THE INPUT FILE IS:                                  hf_ref06.inp
+ THIS JOB RUNS ON:                                     alchemy-he
+ THE CURRENT DIRECTORY IS: 
+ /home/samio/project/a02_alchemy_diatomic/reproduce/production_shifted_refs/hf_ref06
+ THE TEMPORARY DIRECTORY IS: 
+ /home/samio/project/a02_alchemy_diatomic/reproduce/production_shifted_refs/hf_ref06
+ THE PROCESS ID IS:                                         33257
+ THE JOB WAS SUBMITTED BY:                                  samio
+
+
+ ******************************************************************************
+ * INFO - INFO - INFO - INFO - INFO - INFO - INFO - INFO - INFO - INFO - INFO *
+ ******************************************************************************
+ *  hf_ref06                                                                  *
+ ******************************************************************************
+
+ ******************************************************************************
+ **                              INPUT FILE                                  ** 
+ ******************************************************************************
+ ** &INFO                                                                     **
+ **  hf_ref06                                                                 **
+ ** &END                                                                      **
+ **                                                                           **
+ ** &CPMD                                                                     **
+ **  MIRROR                                                                   **
+ **  OPTIMIZE WAVEFUNCTION                                                    **
+ **  CONVERGENCE ORBITAL                                                      **
+ **   1.00E-07                                                                **
+ **  MAXITER                                                                  **
+ **   1000                                                                    **
+ **  CENTER MOLECULE OFF                                                      **
+ **  MEMORY BIG                                                               **
+ ** &END                                                                      **
+ **                                                                           **
+ ** &DFT                                                                      **
+ **  FUNCTIONAL PBE                                                           **
+ ** &END                                                                      **
+ **                                                                           **
+ ** &SYSTEM                                                                   **
+ **  SYMMETRY                                                                 **
+ **   ISOLATED                                                                **
+ **  POISSON SOLVER TUCKERMAN                                                 **
+ **  CELL ABSOLUTE                                                            **
+ **   20.000 10.000 10.000  0.000  0.000  0.000                               **
+ **  ANGSTROM                                                                 **
+ **  CUTOFF                                                                   **
+ **   200.0                                                                   **
+ ** &END                                                                      **
+ **                                                                           **
+ ** &ATOMS                                                                    **
+ ** *H_q1_pbe.psp                                                             **
+ **  LMAX=F                                                                   **
+ **    1                                                                      **
+ **      5.0000   5.0000   5.0000                                             **
+ ** *F_q7_pbe.psp                                                             **
+ **  LMAX=F                                                                   **
+ **    1                                                                      **
+ **      5.6000   5.0000   5.0000                                             **
+ ** &END                                                                      **
+ ******************************************************************************
+ ******************************************************************************
+
+ SINGLE POINT DENSITY OPTIMIZATION
+
+ USING SEED       123456 TO INIT. PSEUDO RANDOM NUMBER GEN.
+ PATH TO THE RESTART FILES:                                    ./
+ GRAM-SCHMIDT ORTHOGONALIZATION
+ MAXIMUM NUMBER OF STEPS:                             10000 STEPS
+ MAXIMUM NUMBER OF ITERATIONS FOR SC:                  1000 STEPS
+ PRINT INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ NUMBER OF DISTINCT RESTART FILES:                              1
+ TEMPERATURE IS CALCULATED ASSUMING EXTENDED BULK BEHAVIOR 
+ FICTITIOUS ELECTRON MASS:                               400.0000
+ TIME STEP FOR ELECTRONS:                                  5.0000
+ TIME STEP FOR IONS:                                       5.0000
+ CONVERGENCE CRITERIA FOR WAVEFUNCTION OPTIMIZATION:   1.0000E-07
+ WAVEFUNCTION OPTIMIZATION BY PRECONDITIONED DIIS
+ THRESHOLD FOR THE WF-HESSIAN IS                           0.5000
+ MAXIMUM NUMBER OF VECTORS RETAINED FOR DIIS:                  10
+ STEPS UNTIL DIIS RESET ON POOR PROGRESS:                      10
+ FULL ELECTRONIC GRADIENT IS USED 
+ SPLINE INTERPOLATION IN G-SPACE FOR PSEUDOPOTENTIAL FUNCTIONS
+    NUMBER OF SPLINE POINTS:                                 5000
+
+ EXCHANGE CORRELATION FUNCTIONALS 
+    LDA EXCHANGE:                                            NONE
+    LDA XC THROUGH PADE APPROXIMATION
+    S.GOEDECKER, J.HUTTER, M.TETER PRB 541703 (1996)
+    GRADIENT CORRECTED FUNCTIONAL
+    DENSITY THRESHOLD:                                1.00000E-08
+    EXCHANGE ENERGY
+       [PBE: J.P. PERDEW ET AL. PRL 77, 3865 (1996)]
+    CORRELATION ENERGY 
+       [PBE: J.P. PERDEW ET AL. PRL 77, 3865 (1996)]
+
+ ***     DETSP| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+
+ ***************************** ATOMS ****************************
+   NR   TYPE        X(BOHR)        Y(BOHR)        Z(BOHR)     MBL
+    1      H       9.448631       9.448631       9.448631       3
+    2      F      10.582466       9.448631       9.448631       3
+ ****************************************************************
+
+ NUMBER OF STATES:                                              4
+ NUMBER OF ELECTRONS:                                     8.00000
+ CHARGE:                                                  0.00000
+ ELECTRON TEMPERATURE(KELVIN):                            0.00000
+ OCCUPATION
+  2.0  2.0  2.0  2.0
+
+ **************************************************************** 
+                                                                  
+ Atomic symbol                       : H                          
+                                                                  
+ Atomic number                       :   1                        
+ Effective core charge               :   1                        
+ Number of core states               :   0                        
+ Number of valence states            :  10                        
+ Electronic configuration (s,p,d,...):     1                      
+                                                                  
+ Exchange-correlation functional     : PBE                        
+                                                                  
+       r(loc)         C(1)         C(2)                           
+     0.200000    -4.178900     0.724463                           
+                                                                  
+ Please cite:                                                     
+                                                                  
+ - S. Goedecker, M. Teter, and J. Hutter,                         
+   Phys. Rev. B 54, 1703 (1996)                                   
+ - C. Hartwigsen, S. Goedecker, and J. Hutter,                    
+   Phys. Rev. B 58, 3641 (1998)                                   
+ - M. Krack,                                                      
+   Theor. Chem. Acc. 114, 145 (2005)                              
+                                                                  
+ **************************************************************** 
+
+ **************************************************************** 
+                                                                  
+ Atomic symbol                       : F                          
+                                                                  
+ Atomic number                       :   9                        
+ Effective core charge               :   7                        
+ Number of core states               :   1                        
+ Number of valence states            :   9                        
+ Electronic configuration (s,p,d,...):     2    5                 
+                                                                  
+ Exchange-correlation functional     : PBE                        
+                                                                  
+       r(loc)         C(1)         C(2)                           
+     0.214930   -21.573028     3.199776                           
+                                                                  
+         r(0)     h(i,j)^0                                        
+     0.194684    23.743540                                        
+                                                                  
+ Please cite:                                                     
+                                                                  
+ - S. Goedecker, M. Teter, and J. Hutter,                         
+   Phys. Rev. B 54, 1703 (1996)                                   
+ - C. Hartwigsen, S. Goedecker, and J. Hutter,                    
+   Phys. Rev. B 58, 3641 (1998)                                   
+ - M. Krack,                                                      
+   Theor. Chem. Acc. 114, 145 (2005)                              
+                                                                  
+ **************************************************************** 
+
+ ****************************************************************
+ *   ATOM       MASS   RAGGIO NLCC              PSEUDOPOTENTIAL *
+ *      H     1.0080   1.2000  NO                   S     LOCAL *
+ *      F    18.9984   1.2000  NO    GOEDECKER      S  NONLOCAL *
+ *                                                  P  NONLOCAL *
+ *                                                  D     LOCAL *
+ ****************************************************************
+
+
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+  NCPU     NGW     NHG  PLANES  GXRAYS  HXRAYS ORBITALS Z-PLANES
+     0  322338 2578565     360    5689   22733       4       1
+                G=0 COMPONENT ON PROCESSOR :     0
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+
+ ***    loadpa| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+
+ OPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPEN
+ NUMBER OF CPUS PER TASK                                        1
+ OPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPENMPOPEN
+
+ ***     rggen| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+
+ ************************** SUPERCELL ***************************
+ THIS IS AN ISOLATED SYSTEM CALCULATION
+ POISSON EQUATION SOLVER  :                   TUCKERMAN & MARTYNA
+ SHORT RANGE POTENTIAL LENGTH * BOX LENGTH                  7.000
+ SYMMETRY:                                           ORTHORHOMBIC
+ LATTICE CONSTANT(a.u.):                                 37.79452
+ CELL DIMENSION:  37.7945  0.5000  0.5000  0.0000  0.0000  0.0000
+ VOLUME(OMEGA IN BOHR^3):                             13496.66899
+ LATTICE VECTOR A1(BOHR):           37.7945     0.0000     0.0000
+ LATTICE VECTOR A2(BOHR):            0.0000    18.8973     0.0000
+ LATTICE VECTOR A3(BOHR):            0.0000     0.0000    18.8973
+ RECIP. LAT. VEC. B1(2Pi/BOHR):      0.0265     0.0000     0.0000
+ RECIP. LAT. VEC. B2(2Pi/BOHR):      0.0000     0.0529     0.0000
+ RECIP. LAT. VEC. B3(2Pi/BOHR):      0.0000     0.0000     0.0529
+ REAL SPACE MESH:                   360          180          180
+ WAVEFUNCTION CUTOFF(RYDBERG):                          200.00000
+ DENSITY CUTOFF(RYDBERG):          (DUAL= 4.00)         800.00000
+ NUMBER OF PLANE WAVES FOR WAVEFUNCTION CUTOFF:            322338
+ NUMBER OF PLANE WAVES FOR DENSITY CUTOFF:                2578565
+ ****************************************************************
+
+ ***  RINFORCE| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+ ***    FFTPRP| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+ ***   CLUSTER| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+
+ GENERATE ATOMIC BASIS SET
+      H        SLATER ORBITALS
+        1S        ALPHA=   1.0000      OCCUPATION= 1.00
+      F        SLATER ORBITALS
+        2S        ALPHA=   2.5638      OCCUPATION= 2.00
+        2P        ALPHA=   2.5500      OCCUPATION= 5.00
+
+
+ INITIALIZATION TIME:                               21.17 SECONDS
+
+ ***    WFOPTS| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+ ***     PHFAC| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+ NOTE: ATOMIC GUESS USING DISTRIBUTED LINALG WITH LANCZOS
+ ***    ATOMWF| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+ ATRHO| CHARGE(R-SPACE):    8.000000 (G-SPACE):    8.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           9.448631       9.448631       9.448631
+       2       F          10.582466       9.448631       9.448631
+ ****************************************************************
+
+
+ TIME FOR WAVEFUNCTION INITIALIZATION:              25.79 SECONDS
+ ***    RWFOPT| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+ EWALD| SUM IN REAL SPACE OVER                      1* 1* 1 CELLS
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                     8.0000000000
+    IN R-SPACE =                                     8.0000000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -23.69248604 A.U.
+ (K)                  KINETIC ENERGY =           20.70089236 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -12.33170987 A.U.
+ (S)                           ESELF =           16.62259502 A.U.
+ (R)                             ESR =            2.12826390 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -29.41368684 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            2.91518462 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -5.56316631 A.U.
+          GRADIENT CORRECTION ENERGY =           -0.14411839 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  2.663E-02   3.593E-03     -23.692486    0.000E+00     18.23
+   2  3.599E-02   1.560E-03     -24.256639   -5.642E-01     18.42
+   3  9.573E-03   8.802E-04     -24.484076   -2.274E-01     18.52
+   4  4.820E-03   5.666E-04     -24.518755   -3.468E-02     18.62
+   5  4.608E-03   3.045E-04     -24.529884   -1.113E-02     18.65
+   6  2.680E-03   1.330E-04     -24.533173   -3.289E-03     18.96
+   7  1.138E-03   7.044E-05     -24.533783   -6.104E-04     19.30
+   8  5.494E-04   3.805E-05     -24.533928   -1.450E-04     18.82
+   9  2.347E-04   1.389E-05     -24.533979   -5.104E-05     19.38
+  10  1.028E-04   5.302E-06     -24.533987   -7.617E-06     19.42
+  11  4.761E-05   2.730E-06     -24.533988   -1.226E-06     18.76
+  12  2.381E-05   1.386E-06     -24.533989   -3.824E-07     19.31
+  13  1.248E-05   7.957E-07     -24.533989   -1.167E-07     19.54
+  14  6.516E-06   3.871E-07     -24.533989   -4.768E-08     18.93
+  15  3.844E-06   2.285E-07     -24.533989   -1.076E-08     19.18
+  16  3.613E-06   1.028E-07     -24.533989   -2.111E-09     19.39
+  17  1.730E-06   6.078E-08     -24.533989   -4.895E-10     19.08
+  18  1.299E-06   3.563E-08     -24.533989   -1.199E-10     19.19
+  19  3.681E-07   2.041E-08     -24.533989   -6.943E-11     19.72
+  20  2.247E-07   1.139E-08     -24.533989   -1.400E-11     19.38
+  21  1.299E-07   5.043E-09     -24.533989   -6.398E-12     18.74
+  22  6.463E-08   3.059E-09     -24.533989    2.018E-12     18.20
+
+ RESTART INFORMATION WRITTEN ON FILE                  ./RESTART.1
+ ***    RWFOPT| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           9.448631       9.448631       9.448631
+       2       F          10.582466       9.448631       9.448631
+ ****************************************************************
+
+
+ ****************************************************************
+
+
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    6.46282E-08         NORM =    3.05864E-09
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                     8.0000000000
+    IN R-SPACE =                                     8.0000000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -24.53398874 A.U.
+ (K)                  KINETIC ENERGY =           21.12776254 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -12.87926887 A.U.
+ (S)                           ESELF =           16.62259502 A.U.
+ (R)                             ESR =            2.12826390 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -29.16039518 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            1.62637767 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -5.24846490 A.U.
+          GRADIENT CORRECTION ENERGY =           -0.13314014 A.U.
+
+ ****************************************************************
+
+
+
+ ****************************************************************
+ *                                                              *
+ *                            TIMING                            *
+ *                                                              *
+ ****************************************************************
+ SUBROUTINE       CALLS             SELF TIME          TOTAL TIME
+                            AVERAGE   MAXIMUM   AVERAGE   MAXIMUM
+ cpmd                 1        0.03      0.03    449.70    449.70
+ rwfopt               1        0.16      0.16    444.12    444.12
+ updwf               22        0.01      0.01    417.72    417.72
+ forcedr             22        0.00      0.00    403.83    403.83
+ forces              22        0.08      0.08    403.83    403.83
+ forces_a            22        0.00      0.00    338.15    338.15
+ rscpot              22        0.00      0.00    337.94    337.94
+ vofrho              23        0.00      0.00    322.50    322.50
+ VOFRHOB             23        4.13      4.13    291.07    291.07
+ INVFFTN            184      161.41    161.41    161.41    161.41
+ FWFFTN             163      149.02    149.02    149.02    149.02
+ GCENER              23       61.67     61.67    134.14    134.14
+ GRADEN              23       15.59     15.59     88.69     88.69
+ vpsi                24        6.39      6.39     66.67     66.67
+ rhoofr              22        4.37      4.37     34.40     34.40
+ VOFRHOT             23        0.96      0.96     31.42     31.42
+ initrun              1        0.06      0.06     25.71     25.71
+ rinitwf              1        0.00      0.00     25.65     25.65
+ ATOMWF               1        0.02      0.02     25.60     25.60
+ xcener_new          23        1.69      1.69     15.49     15.49
+ mikeu               23       13.80     13.80     13.80     13.80
+ odiis               22       12.29     12.29     12.48     12.48
+ ppener              23        4.50      4.50      4.50      4.50
+ dist_ksmat           1        0.06      0.06      4.49      4.49
+ forces_b            22        0.14      0.14      3.18      3.18
+ initclust            1        0.67      0.67      2.66      2.66
+ ATRHO                1        0.99      0.99      2.07      2.07
+ SCREENB              1        1.00      1.00      1.99      1.99
+ rinit                1        0.00      0.00      1.99      1.99
+ rggen                1        0.08      0.08      1.99      1.99
+ EICALC              23        1.91      1.91      1.91      1.91
+ loadpa               1        0.45      0.45      1.91      1.91
+ ovlap               22        1.10      1.10      1.51      1.51
+ ortho               22        0.00      0.00      1.40      1.40
+ rgs                 22        1.04      1.04      1.40      1.40
+ fnonloc             24        0.85      0.85      1.31      1.31
+ loadpa_b             1        0.68      0.68      0.68      0.68
+ NUMPW                1        0.55      0.55      0.55      0.55
+ zhwwf                1        0.46      0.46      0.53      0.53
+ loadpa_c             1        0.53      0.53      0.53      0.53
+ ****************************************************************
+
+       CPU TIME :    0 HOURS  7 MINUTES 29.93 SECONDS     
+   ELAPSED TIME :    0 HOURS  7 MINUTES 45.31 SECONDS     
+ ***      CPMD| SIZE OF THE PROGRAM IS NOT AVAILABLE          ***
+
+ PROGRAM CPMD ENDED AT:   2017-12-06 16:57:39.751   
