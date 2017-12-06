@@ -16,14 +16,14 @@ base = qtk.Molecule()
 base.celldm = [20, 10, 10, 0, 0, 0]
 base.isolated = True
 hf = base.copy()
-hf.build([[1, 0., 0., 0.], [9, 1., 0., 0.]])
+hf.build([[1, 5., 5., 5.], [9, 6., 5., 5.]])
 hf.name = 'hf_ref'
 hcl = base.copy()
-hcl.build([[1, 0., 0., 0.], [17, 1., 0., 0.]])
+hcl.build([[1, 5., 5., 5.], [17, 6., 5., 5.]])
 hcl.name = 'hcl_tar'
 
 # basic setup
-prefix = 'production_'
+prefix = 'production_shifted_'
 ref_root = os.path.abspath('%srefs' % prefix)
 
 qmsettings = {
